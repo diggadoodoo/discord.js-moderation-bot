@@ -35,7 +35,7 @@ bot.on("message", message => {
         if (command === "help") {
             const fayer = bot.users.get("304307395289415680")
             const helpEmbed = new Discord.RichEmbed()
-                .setTitle("My commands list | prefix ``+`` ")
+                .setTitle(`My commands list | prefix ``${config.prefix}`` `)
                 .addField("``suggest``", "Suggest commands for the bot")
                 .addField("``ping``", "Your basic ping pong command")
                 .addField("``uptime``", "Seeing the bot's uptime")
