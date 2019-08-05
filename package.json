@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/fayercx2931/necrot-moderation/issues"
   },
-  "homepage": "https://github.com/fayercx2931/necrot-moderation#readme"
+  "homepage": "https://github.com/fayercx2931/necrot-moderation#readme",
+  "dependencies": {
+    "discord.js": "^11.5.1"
+  }
 }
