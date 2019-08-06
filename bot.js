@@ -44,6 +44,7 @@ bot.on("message", message => {
             .addField("``unmute``", "Unsilence the annoying user")
             .addField("``add``", "Adds role to a user, hooray :tada:")
             .addField("``remove``", "Removes role from user, sadface")
+            .addField("``rps``", "a basic rock paper scissors commands, no cheating!")
             .setThumbnail(bot.avatarURL)
             .setColor("#020101")
         message.channel.send(helpEmbed)
@@ -200,6 +201,16 @@ bot.on("message", message => {
             })
 
         }
+    }
+
+    if(command === "rps"){
+        const options = [
+            "rock :shell: ",
+            "paper :newspaper2:",
+            "scissors :scissors: "
+        ]
+        const option = options[Math.floor(Math.random() * options.length)]
+        message.channel.send(`You got ${option}`)
     }
 
     if (command === "uptime") {
