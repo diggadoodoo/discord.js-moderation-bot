@@ -57,7 +57,7 @@ bot.on("message", message => {
         const member = message.mentions.members.first();
         if (!member)
             return message.channel.send(":no_entry: No user mentioned.")
-        const reason = args.slice(1).join(" ")
+        const reason = args.slice(1).join(" ") 
         if (!member.kickable)
             return message.channel.send(":no_entry: I cannot kick this user.")
         if (member) {
