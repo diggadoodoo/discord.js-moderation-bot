@@ -4,7 +4,6 @@
 ---
 
 ### Warning: This will most likely be the worst code you have ever seen. I am pretty new to Discord.js, but new enough to commit a repository
-You can use this code.
 
 ### Any errors?
 If you'd like to come to me personally, contact me: `Olsen#5830`
