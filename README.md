@@ -4,10 +4,10 @@
 ---
 
 ### Warning: This will most likely be the worst code you have ever seen. I am pretty new to Discord.js, but new enough to commit a repository
-You can use this code, if you do not want to self-host/launch the bot by yourself you can [invite](https://discordapp.com/api/oauth2/authorize?client_id=606531108695179264&permissions=8&scope=bot) it to your server.
+You can use this code.
 
 ### Any errors?
-If you'd like to come to me personally, contact me [via my discord server](https://discord.gg/JsbdNvJ)
+If you'd like to come to me personally, contact me: `Olsen#5830`
 
 ---
 # Getting started (For people who aren't used to Discord.js)
@@ -58,4 +58,4 @@ Enjoy the bot, updates are frequent so always return to replace your `bot.js` wi
 
 ---
 
-I apologize if this tutorial isn't clear, please contact me on Discord if you do not understand, my Discord is `fayercx2931#9534`
+If you're suffering any difficulties then once again, contact me `Olsen#5830` on Discord
