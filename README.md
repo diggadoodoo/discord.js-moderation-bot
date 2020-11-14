@@ -6,7 +6,7 @@
 ### Warning: This will most likely be the worst code you have ever seen. I am pretty new to Discord.js, but new enough to commit a repository
 
 ### Any errors?
-If you'd like to come to me personally, contact me: `Olsen#5830`
+If you'd like to come to me personally, join the support server: https://discord.gg/t2nV9kBnch
 
 ---
 # Getting started (For people who aren't used to Discord.js)
