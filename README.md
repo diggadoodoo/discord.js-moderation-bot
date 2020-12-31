@@ -57,4 +57,4 @@ Enjoy the bot, updates are frequent so always return to replace your `bot.js` wi
 
 ---
 
-If you're suffering any difficulties then once again, contact me `Olsen#5830` on Discord
+If you're suffering any difficulties then once again, contact me `Olsen#5830` on Discord (but please try the server first)
