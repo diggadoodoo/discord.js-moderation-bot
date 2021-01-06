@@ -55,3 +55,5 @@ Enjoy the bot, updates are frequent so always return to replace your `bot.js` wi
 
 ### Any errors?
 If you'd like to come to me personally, join the [support server](https://discord.gg/t2nV9kBnch)
+
+Also a big thank you to the contributor for correcting small errors
