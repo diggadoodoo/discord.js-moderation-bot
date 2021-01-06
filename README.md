@@ -29,7 +29,7 @@ Type into your powershell/cmd `npm init` and enter information that is requested
 
 
 ### Step four, installing Discord.js
-Now, you should type `npm install discord.js@11.6.4 --save`, we are installing the discord.js modules **This will be updated to v12 soon**
+Now, you should type `npm install discord.js`, we are installing the discord.js modules
 
 ### Step five, getting the files
 Download `bot.js` and `config.json`
