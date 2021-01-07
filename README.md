@@ -21,7 +21,7 @@ Make a folder for which your bot's coding will be in
 
 ### Step two, opening powershell
 Do shift + right click and select open powershell (or cmd depending on your PC)
-![Step two]https://i.imgur.com/1quX9nB.png "Step two")
+![Step two](https://i.imgur.com/1quX9nB.png "Step two")
 
 
 ### Step three, initiating
