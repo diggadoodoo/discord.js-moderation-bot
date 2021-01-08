@@ -34,7 +34,7 @@ bot.on("message", message => {
 
     if (command === "kick") {
         if (!message.member.hasPermission('KICK_MEMBERS'))
-            return message.channel.send("Insufficient permissionss (Requires `KICK_MEMBERS`)")
+            return message.channel.send("Insufficient permissions (Requires permission `Kick members`)")
         const member = message.mentions.members.first();
         if (!member)
             return message.channel.send("You have not mentioned a user")
@@ -54,7 +54,7 @@ bot.on("message", message => {
 
     if (command === "ban") {
         if (!message.member.hasPermission('BAN_MEMBERS'))
-            return message.channel.send("Insufficient permissionss (Requires `BAN_MEMBERS`)")
+            return message.channel.send("Insufficient permissions (Requires permission `Ban members`)")
         const member = message.mentions.members.first();
         if (!member)
             return message.channel.send("You have not mentioned a user")
@@ -74,7 +74,7 @@ bot.on("message", message => {
 
     if (command === "add") {
         if (!message.member.hasPermission('MANAGE_ROLES'))
-            return message.channel.send("Insufficient permissionss (Requires `MANAGE_ROLES`)")
+            return message.channel.send("Insufficient permissions (Requires permission `Manage roles`)")
         const member = message.mentions.members.first()
         if (!member)
             return message.channel.send("You have not mentioned a user")
@@ -93,7 +93,7 @@ bot.on("message", message => {
 
     if (command === "remove") {
         if (!message.member.hasPermission('MANAGE_ROLES'))
-            return message.channel.send("Insufficient permissionss (Requires `MANAGE_ROLES`)")
+            return message.channel.send("Insufficient permissions (Requires permission `Manage roles`)")
         const member = message.mentions.members.first()
         if (!member)
             return message.channel.send("You have not mentioned a user")
