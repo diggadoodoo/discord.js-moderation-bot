@@ -7,7 +7,7 @@
 # Getting started (For people who aren't used to Discord.js)
 
 
-## Requirements
+### Requirements
 * Node.js
 * A code editor (visual studio code, atom, notepad++ etc)
 
