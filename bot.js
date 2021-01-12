@@ -25,6 +25,7 @@ bot.on("message", message => {
             .addField(`\`add\``, `Adds a role to a user \nUsage: **${config.prefix}add [@User] [Role]**`)
             .addField(`\`remove\``, `Removes a role from a user \nUsage: **${config.prefix}remove [@User] [Role]**`)
             .addField(`\`rps\``, `Play rock paper scissors`)
+            .addField(`\`say\``, `Have the bot say something`)
         message.channel.send(helpEmbed)
     }
 
