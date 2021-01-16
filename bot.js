@@ -152,7 +152,7 @@ bot.on("message", message => {
     }
    
     if (command === "purge") {
-    if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.channel.send("Insufficient permissions (requires permission `Manage messages`).then(msg => {
+    if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.channel.send("Insufficient permissions (requires permission `Manage messages`)").then(msg => {
         msg.delete({ timeout: 30000 })
     })
     const number = args.join(" ")
