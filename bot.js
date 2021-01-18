@@ -145,9 +145,9 @@ bot.on("message", message => {
 
     if (command === "say") {
     const text = args.join(" ")
-    if(!text) return message.channel.send("You have not specified something to say")
+    if(!text) return message.channel.send("Bạn chưa chỉ định câu cần nói.")
     message.channel.send(text)
-    
+    message.delete({ timeout: 1 });
     }
 
     if (command === "rps") {
