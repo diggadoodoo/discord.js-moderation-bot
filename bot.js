@@ -24,6 +24,7 @@ bot.on("message", message => {
             .addField(`\`ban\``, `Usage: **${config.prefix}ban [@User]**\n**${config.prefix}ban [@User][Reason]**`)
             .addField(`\`add\``, `Adds a role to a user \nUsage: **${config.prefix}add [@User] [Role]**`)
             .addField(`\`remove\``, `Removes a role from a user \nUsage: **${config.prefix}remove [@User] [Role]**`)
+            .addField(`\`purge\``, `Clears a number of messages between 2 or 100 \nUsage: **${config.prefix}purge [number]**`)
             .addField(`\`rps\``, `Play rock paper scissors`)
             .addField(`\`say\``, `Have the bot say something`)
         message.channel.send(helpEmbed)
@@ -145,12 +146,26 @@ bot.on("message", message => {
 
     if (command === "say") {
     const text = args.join(" ")
-    if(!text) return message.channel.send("You have not specified something to say")
+    if(!text) return message.channel.send("You have not specified something to say").then(msg => {
+        msg.delete({ timeout: 30000 })
+    })
     message.channel.send(text)
     
     }
-
-    if (command === "rps") {
+   
+    if (command === "purge") {
+    if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.channel.send("Insufficient permissions (requires permission `Manage messages`)").then(msg => {
+        msg.delete({ timeout: 30000 })
+    })
+    const number = args.join(" ")
+    if(!number) return message.channel.send("You haven't specified a number to purge").then(msg => {
+        msg.delete({ timeout: 30000 })
+    })
+   message.channel.bulkDelete(number).catch(console.error)
+   
+   }
+    
+   if (command === "rps") {
         const options = [
             "rock :shell: ",
             "paper :newspaper2:",
