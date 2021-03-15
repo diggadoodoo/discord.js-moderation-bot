@@ -1,0 +1,23 @@
+{
+  "name": "discordjs-moderation-bot",
+  "version": "1.0.0",
+  "description": "A small Discord bot, without a command handler ",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/choppymaster/discord.js-moderation-bot.git"
+  },
+  "keywords": [
+    "bot",
+    "discord"
+  ],
+  "author": "root admin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/choppymaster/discord.js-moderation-bot/issues"
+  },
+  "homepage": "https://github.com/choppymaster/discord.js-moderation-bot#readme"
+}

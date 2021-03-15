@@ -10,6 +10,7 @@
 ### Requirements
 * Node.js
 * A code editor (visual studio code, atom, notepad++ etc)
+* Git
 
 ### Step zero, making a Discord bot account
 Go to https://discord.com/developers and make an application. After creating your application, you should have the option to create a bot user.
@@ -24,28 +25,24 @@ Do shift + right click and select open powershell (or cmd depending on your PC)
 ![Step two](https://i.imgur.com/1quX9nB.png "Step two")
 
 
-### Step three, initiating
-Type into your powershell/cmd `npm init` and enter information that is requested, **set your entry point to `bot.js`**. After doing that, we should now have a file called `package.json`
-
+### Step three, Getting the files and initiating
+On your terminal, execute the command `git clone https://github.com/fifthsonofole/discordjs-moderation-bot && cd discordjs-moderation-bot`, to install the files and initiate the directory.
 
 ### Step four, installing Discord.js
-Now, you should type `npm install discord.js`, we are installing the discord.js modules
+Now, you should type `npm install discord.js`, we are installing the discord.js module. Note: This will make a file called `package-lock.json` and a directory called `node_modules`, please don't delete that.
 
-### Step five, getting the files
-Download `bot.js` and `config.json`
-
-### Step six (I), getting your bot's token
+### Step five (I), getting your bot's token
 Get your bots token. Reminder, bot tokens are key information that gives complete access to your bot.
 ![Step six I](https://i.imgur.com/ytSLIi2.png "Step Six I")
 
-### Step six (II), config.json
+### Step five (II), config.json
 Place your bot's token **between** the quotation marks, you can also edit the prefix if you'd like.
 ![Step six](https://i.imgur.com/dy7OSYW.png "Step six")
 
-### Step seven, running your bot
+### Step six, running your bot
 Run your bot by typing `node bot` into your powershell/cmd
 
-### Step eight, adding your bot to your server
+### Step seven, adding your bot to your server
 Use this link and replace **client_id_here** with your actual client ID
 https://discordapp.com/api/oauth2/authorize?client_id=client_id_here&permissions=0&scope=bot
 # And your bot is running!
