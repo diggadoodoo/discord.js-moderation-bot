@@ -26,7 +26,7 @@ Do shift + right click and select open powershell (or cmd depending on your PC)
 
 
 ### Step three, Getting the files and initiating
-On your terminal, execute the command `git clone https://github.com/fifthsonofole/discord.js-moderation-bot && cd discord.js-moderation-bot`, to install the files and initiate the directory.
+On your terminal, execute the command `git clone https://github.com/J2Olsen/discord.js-moderation-bot && cd discord.js-moderation-bot`, to install the files and initiate the directory.
 
 ### Step four, installing Discord.js
 Now, you should type `npm install discord.js`, we are installing the discord.js module. Note: This will make a file called `package-lock.json` and a directory called `node_modules`, please don't delete that.
