@@ -28,7 +28,6 @@ Now, you should type `npm install discord.js`, we are installing the discord.js 
 
 ### Step five (I), getting your bot's token
 Get your bots token. Reminder, bot tokens are key information that gives complete access to your bot.
-![Step six I](https://i.imgur.com/ytSLIi2.png "Step Six I")
 
 ### Step five (II), config.json
 Place your bot's token **between** the quotation marks, you can also edit the prefix if you'd like.
