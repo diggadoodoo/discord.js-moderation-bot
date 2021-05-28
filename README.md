@@ -11,7 +11,6 @@
 
 ### Step zero, making a Discord bot account
 Go to https://discord.com/developers and make an application. After creating your application, you should have the option to create a bot user.
-![Step zero](https://i.imgur.com/TpOd97E.png "Step zero")
 
 ### Step one, making the folder
 Make a folder for which your bot's coding will be in
