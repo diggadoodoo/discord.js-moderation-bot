@@ -33,11 +33,13 @@ npm init && npm install discord.js
 6. Place your bot's token **between** the quotation marks, you can also edit the prefix if you'd like.
 ![A screenshot of JSON code highlighing text between quotation marks](https://i.imgur.com/dy7OSYW.png)
 
-8. Run your bot by typing `node bot` into your Terminal / Powershell
+8. Run your bot by running the command below in a  Terminal / Powershell
 
-9. You can use [this](https://discordapi.com/permissions.html#) to generate an invite link for your bot
+```sh
+node bot
+```
 
-Yay! Your bot is running!
+Your bot is running! You can use [this](https://discordapi.com/permissions.html#) to generate an invite link for your bot.
 
 Enjoy the bot, updates are frequent so always return to replace your `bot.js` with the newest one.
 
