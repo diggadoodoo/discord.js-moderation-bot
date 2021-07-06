@@ -13,15 +13,13 @@
 
 1. Go to https://discord.com/developers and make an application. After creating your application, you should have the option to create a bot user.
 
-2. Make a folder for which your bot's coding will be in
-
-3. Do shift + right click and select open powershell (or cmd depending on your PC)
+3. Make a folder for which your bot's code will be in, then do `Shift + Right click` and select `Open Powershell Window here`
 ![A screenshot of a context menu on File Explorer highlighning the choice "Open Powershell Window here"](https://i.imgur.com/1quX9nB.png)
 
 4. Run the script below
 
 ```sh
-npm init && npm install discord.js
+git clone https://github.com/J2Olsen/discord.js-moderation-bot.git && cd discord.js-moderation-bot && npm init && npm install discord.js
 ```
 
 > *Note*: This will make a file called `package-lock.json` and a directory called `node_modules`, please don't delete that.
