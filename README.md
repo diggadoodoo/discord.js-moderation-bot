@@ -18,17 +18,20 @@
 3. Do shift + right click and select open powershell (or cmd depending on your PC)
 ![image](https://i.imgur.com/1quX9nB.png)
 
-4. Run `npm init`
+4. Run the script below
 
-5. Now, you should type `npm install discord.js`, we are installing the discord.js module. 
+```sh
+npm init && npm install discord.js
+```
+
 > *Note*: This will make a file called `package-lock.json` and a directory called `node_modules`, please don't delete that.
 
-6. Get your bots token.
+5. Get your bots token.
 
-> **Reminder**: Keep your bot token safe, anybody can have complete access to your bot.
+> **Reminder**: Keep your bot token safe, anybody can have complete access to your bot if they have it.
 
-7. Place your bot's token **between** the quotation marks, you can also edit the prefix if you'd like.
-![image](https://i.imgur.com/dy7OSYW.png)
+6. Place your bot's token **between** the quotation marks, you can also edit the prefix if you'd like.
+![A screenshot of JSON code highlighing text between quotation marks](https://i.imgur.com/dy7OSYW.png)
 
 8. Run your bot by typing `node bot` into your Terminal / Powershell
 
