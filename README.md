@@ -1,7 +1,7 @@
  A small Discord moderation bot, without a command handler.
 
 
-# Getting started (For people who aren't used to Discord.js)
+# Getting started
 
 ## Requirements
 
