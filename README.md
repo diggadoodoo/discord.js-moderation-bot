@@ -16,7 +16,7 @@
 2. Make a folder for which your bot's coding will be in
 
 3. Do shift + right click and select open powershell (or cmd depending on your PC)
-![image](https://i.imgur.com/1quX9nB.png)
+![A screenshot of a context menu on File Explorer highlighning the choice "Open Powershell Window here"](https://i.imgur.com/1quX9nB.png)
 
 4. Run the script below
 
