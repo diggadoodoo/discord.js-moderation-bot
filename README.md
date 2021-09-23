@@ -1,8 +1,5 @@
-![Eden](https://i.imgur.com/DR9Kzh2.png "Eden")
- 
  A small Discord moderation bot, without a command handler
 
----
 
 # Getting started (For people who aren't used to Discord.js)
 
@@ -14,29 +11,25 @@
 
 ### Step zero, making a Discord bot account
 Go to https://discord.com/developers and make an application. After creating your application, you should have the option to create a bot user.
-![Step zero](https://i.imgur.com/TpOd97E.png "Step zero")
 
-### Step one, making the folder
-Make a folder for which your bot's coding will be in
+### Step one, getting the files
+Clone this repository to get the bot files. (You will get as a folder.)
 
 
 ### Step two, opening powershell
 Do shift + right click and select open powershell (or cmd depending on your PC)
 ![Step two](https://i.imgur.com/1quX9nB.png "Step two")
 
-    
-### Step three, Getting the files and initiating
-On your terminal, execute the command `git clone https://github.com/J2Olsen/discord.js-moderation-bot && cd discord.js-moderation-bot`, to install the files and initiate the directory.
+### Step 3, CD-ing the repository, CD to the bot folder.
 
 ### Step four, installing Discord.js
 Now, you should type `npm install discord.js`, we are installing the discord.js module. Note: This will make a file called `package-lock.json` and a directory called `node_modules`, please don't delete that.
 
 ### Step five (I), getting your bot's token
 Get your bots token. Reminder, bot tokens are key information that gives complete access to your bot.
-![Step six I](https://i.imgur.com/ytSLIi2.png "Step Six I")
 
 ### Step five (II), config.json
-Place your bot's token **between** the quotation marks, you can also edit the prefix if you'd like.
+Rename `config_example.json` to `config.json`. Place your bot's token **between** the quotation marks, you can also edit the prefix if you'd like.
 ![Step six](https://i.imgur.com/dy7OSYW.png "Step six")
 
 ### Step six, running your bot
