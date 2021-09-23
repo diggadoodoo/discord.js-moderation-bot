@@ -24,7 +24,7 @@ Make a folder for which your bot's coding will be in
 Do shift + right click and select open powershell (or cmd depending on your PC)
 ![Step two](https://i.imgur.com/1quX9nB.png "Step two")
 
-
+    
 ### Step three, Getting the files and initiating
 On your terminal, execute the command `git clone https://github.com/J2Olsen/discord.js-moderation-bot && cd discord.js-moderation-bot`, to install the files and initiate the directory.
 
