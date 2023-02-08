@@ -79,13 +79,12 @@ bot.on("message", message => {
     })
         const reason = args.slice(1).join(" ")
         if (member) {
-            if (!reason) return member.kick().then(member => {
-                message.channel.send(`${member.user.tag} was kicked, no reason was provided`);
-            })
-
-            if (reason) return member.kick().then(member => {
+            if (reason) { return member.kick(reason).then(member => {
                 message.channel.send(`${member.user.tag} was kicked for ${reason}`);
-            })
+            }) 
+            } else return member.kick().then(member => {
+                    message.channel.send(`${member.user.tag} was kicked, no reason was provided`);
+                })
         }
     }
 
