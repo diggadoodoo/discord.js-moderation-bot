@@ -14,7 +14,37 @@ bot.on("message", message => {
     const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase()
 
-    if (command === "help") {
+    switch (command) {
+        case "help":
+            helpCommand()
+            break;
+        case "ping":
+            pingCommand()
+            break;
+        case "kick":
+            kickCommand()
+            break;
+        case "ban":
+            banCommand()
+            break;
+        case "add":
+            addCommand()
+            break;
+        case "remove":
+            removeCommand()
+            break;
+        case "say":
+            sayCommand()
+            break;
+        case "purge":
+            purgeCommand()
+            break;
+        case "rps":
+            rpsCommand()
+            break;
+    }
+
+    function helpCommand() {
         const helpEmbed = new Discord.MessageEmbed()
             .setTitle(`${bot.user.username}'s commands`)
             .setDescription(`**Prefix:** ${config.prefix}`)
@@ -29,11 +59,11 @@ bot.on("message", message => {
         message.channel.send(helpEmbed)
     }
 
-    if (command === "ping") {
+    function pingCommand() {
         message.channel.send(`Pong **(${Date.now() - message.createdTimestamp}ms)**`)
     }
 
-    if (command === "kick") {
+    function kickCommand() {
         if (!message.member.hasPermission('KICK_MEMBERS'))
             return message.channel.send("Insufficient permissions (Requires permission `Kick members`)").then(msg => {
         msg.delete({ timeout: 30000 })
@@ -49,17 +79,16 @@ bot.on("message", message => {
     })
         const reason = args.slice(1).join(" ")
         if (member) {
-            if (!reason) return member.kick().then(member => {
-                message.channel.send(`${member.user.tag} was kicked, no reason was provided`);
-            })
-
-            if (reason) return member.kick().then(member => {
+            if (reason) { return member.kick(reason).then(member => {
                 message.channel.send(`${member.user.tag} was kicked for ${reason}`);
-            })
+            }) 
+            } else return member.kick().then(member => {
+                    message.channel.send(`${member.user.tag} was kicked, no reason was provided`);
+                })
         }
     }
 
-    if (command === "ban") {
+    function banCommand() {
         if (!message.member.hasPermission('BAN_MEMBERS'))
             return message.channel.send("Insufficient permissions (Requires permission `Ban members`)").then(msg => {
         msg.delete({ timeout: 30000 })
@@ -85,7 +114,7 @@ bot.on("message", message => {
         }
     }
 
-    if (command === "add") {
+    function addCommand() {
         if (!message.member.hasPermission('MANAGE_ROLES'))
             return message.channel.send("Insufficient permissions (Requires permission `Manage roles`)").then(msg => {
         msg.delete({ timeout: 30000 })
@@ -114,7 +143,7 @@ bot.on("message", message => {
         })
     }
 
-    if (command === "remove") {
+    function removeCommand() {
         if (!message.member.hasPermission('MANAGE_ROLES'))
             return message.channel.send("Insufficient permissions (Requires permission `Manage roles`)").then(msg => {
         msg.delete({ timeout: 30000 })
@@ -143,7 +172,7 @@ bot.on("message", message => {
         })
     }
 
-    if (command === "say") {
+    function sayCommand() {
     const text = args.join(" ")
     if(!text) return message.channel.send("You have not specified something to say").then(msg => {
         msg.delete({ timeout: 30000 })
@@ -152,7 +181,7 @@ bot.on("message", message => {
     
     }
    
-    if (command === "purge") {
+    function purgeCommand() {
     if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.channel.send("Insufficient permissions (requires permission `Manage messages`)").then(msg => {
         msg.delete({ timeout: 30000 })
     })
@@ -164,7 +193,7 @@ bot.on("message", message => {
    
    }
     
-   if (command === "rps") {
+   function rpsCommand() {
         const options = [
             "rock :shell: ",
             "paper :newspaper2:",

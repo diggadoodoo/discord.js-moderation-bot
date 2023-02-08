@@ -20,11 +20,19 @@ Make a folder for which your bot's coding will be in
 Do shift + right click and select open powershell (or cmd depending on your PC)
 ![Step two](https://i.imgur.com/1quX9nB.png "Step two")
 
+### Step three, cloning the repository
+To get the files for the bot, run the command:
+```
+$ git clone https://github.com/diggadoodoo/discord.js-moderation-bot
+```
 
-### Step three, initiating, type `npm init`
 
 ### Step four, installing Discord.js
-Now, you should type `npm install discord.js`, we are installing the discord.js module. Note: This will make a file called `package-lock.json` and a directory called `node_modules`, please don't delete that.
+Run the command:
+```
+$ npm install
+```
+Discord.JS Will be installed.
 
 ### Step five (I), getting your bot's token
 Get your bots token. Reminder, bot tokens are key information that gives complete access to your bot.
