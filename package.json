@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/choppymaster/discord.js-moderation-bot/issues"
   },
-  "homepage": "https://github.com/choppymaster/discord.js-moderation-bot#readme"
+  "homepage": "https://github.com/choppymaster/discord.js-moderation-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  }
 }
